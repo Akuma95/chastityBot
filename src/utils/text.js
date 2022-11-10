@@ -48,9 +48,92 @@ const verifyCommand = {
         }
     },
 }
+const wofCommand = {
+    description: {
+        default: 'Turn the WoF and choose a task for yourself or your sub.',
+        localize: {
+            de: 'Dreht das WoF und wählt eine Aufgabe für sie selbst oder deinen Sub aus.'
+        }
+    },
+    userOption: {
+        description: {
+            default: 'Turn the WoF for your sub.',
+            localize: {
+                de: 'Dreht das WoF für deinen Sub.'
+            }
+        }
+    },
+    error: {
+        default: 'You are not authorized to turn the wheel for this person.',
+        localize: {
+            de: 'Du bist nicht berechtigt für diese Person das Rad zu drehen.'
+        }
+    },
+    embed: {
+        title: {
+            default: 'Task for ',
+            localize: {
+                de: 'Aufgabe für '
+            }
+        },
+        description: {
+            default: 'You have been assigned a task. \n' +
+                'You now have 10 minutes to clear up any missing info',
+            localize: {
+                de: 'Dir wurde eine Aufgabe zugewiesen. \n' +
+                    'Du hast jetzt 10 Minuten um alle fehlenden Infos zu klären.'
+            }
+        },
+        fields: {
+            task: {
+                default: 'TASK',
+                localize: {
+                    de: 'AUFGABE'
+                }
+            },
+            time: {
+                title: {
+                    default: 'Time',
+                    localize: {
+                        de: 'Zeit'
+                    }
+                },
+                description: {
+                    default: 'As soon as everything is cleared you have \n' +
+                        '1 hour',
+                    localize: {
+                        de: 'Sobald alles geklärt ist hast du \n' +
+                            '1 Stunde'
+                    }
+                },
+            },
+            options: {
+                title: {
+                    default: 'To clarify',
+                    localize: {
+                        de: 'Zu klären'
+                    }
+                },
+                description: {
+                    default: 'nothing',
+                    localize: {
+                        de: 'nichts'
+                    }
+                },
+            }
+        },
+        footer: {
+            default: 'Your KH wishes you much fun',
+            localize: {
+                de: 'Dein KH wünscht dir viel Spaß'
+            }
+        },
+    }
+}
 
 
 module.exports = {
     breakCommand,
-    verifyCommand
+    verifyCommand,
+    wofCommand
 }
