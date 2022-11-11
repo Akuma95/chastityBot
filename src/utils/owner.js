@@ -4,9 +4,6 @@ const owner = {
         owner: '342065206853238787',
         name_owner: 'Akuma'
     },
-    '342065206853238787': {
-        test: 'HAHAHA JAAAAAA ES KLAPPT'
-    }
 }
 
 

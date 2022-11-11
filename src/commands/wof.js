@@ -42,9 +42,32 @@ module.exports = class WofBreakSlashCommand extends BaseSlashCommand {
         return id;
     }
 
+    setOption(text) {
+        const regex = /\$(RND|PICK)\$((\d{1,6})\$(\d{1,6})|([a-zA-Z0-9 ](,)?)*)\$/i
+
+        const found = text.match(regex);
+        if (!found) return text;
+        const keyword = found[1];
+        switch (keyword) {
+            case 'RND':
+                const min = found[3];
+                const max = found[4];
+                text = text.replace(regex, Math.floor(Math.random() * (max - min + 1) + min))
+                return text;
+            case 'PICK':
+                const list = found[2].split(',');
+                text = text.replace(regex, list[Math.floor(Math.random()*list.length)])
+                return text;
+        }
+
+    }
+
     getEmbed(name, id, interaction) {
+        id=4;
         const details = this.getDetails(id);
-        const options = wheel[id].options === [] ? wheel[id].options.toString() : this.local(wofCommand.embed.fields.options.description, interaction)
+        let options = wheel[id].options.length === 0
+            ? this.local(wofCommand.embed.fields.options.description, interaction)
+            : wheel[id].options.toString().replace(',', ',\n');
         return new EmbedBuilder()
             .setColor(0x0099FF)
             .setTitle(this.local(wofCommand.embed.title, interaction) + name)
@@ -54,7 +77,7 @@ module.exports = class WofBreakSlashCommand extends BaseSlashCommand {
             .addFields(
                 {
                     name: this.local(wofCommand.embed.fields.task, interaction),
-                    value: this.local(wheel[id].task, interaction)
+                    value: this.setOption(this.local(wheel[id].task, interaction))
                 },
                 {name: '\u200B', value: '\u200B'},
                 {

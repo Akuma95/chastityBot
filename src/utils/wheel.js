@@ -31,27 +31,23 @@ const wheel = [
         type: 'cbt',
         limit: [],
         task: {
-            default: 'Spank balls (XXX hits)',
+            default: 'Spank balls ($RND$20$300$ hits)',
             localize: {
-                de: 'Schlage deine Eier (XXX Schläge)'
+                de: 'Schlage deine Eier ($RND$20$300$ Schläge)'
             }
         },
-        options: [
-            'Anzahl',
-        ],
+        options: [],
     },
     {
         type: 'pain',
         limit: [],
         task: {
-            default: 'Spank ass (XXX hits)',
+            default: 'Spank ass ($RND$20$300$ hits)',
             localize: {
-                de: 'Arschversohlen (XXX Schläge)'
+                de: 'Arschversohlen ($PICK$20,300$ Schläge)'
             }
         },
-        options: [
-            'Anzahl',
-        ]
+        options: []
     },
     {
         type: 'anal',
