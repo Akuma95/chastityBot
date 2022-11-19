@@ -48,6 +48,42 @@ const verifyCommand = {
         }
     },
 }
+const addOwnerCommand = {
+    description: {
+        default: 'With this you can set your owner. He can e.g. turn the wheel of fortune for you',
+        localize: {
+            de: 'Damit kannst du deinen Owner setzen. Welcher z.B. das Glücksrad für dich drehen kann.'
+        }
+    },
+    options: {
+        user: {
+            description: {
+                default: 'Select your owner\'s tag.',
+                localize: {
+                    de: 'Wähle den Tag deines Owners aus.'
+                }
+            }
+        }
+    },
+}
+const showOwnerCommand = {
+    description: {
+        default: 'With this you can show the owner of a sub.',
+        localize: {
+            de: 'Damit kannst du die den Owner eines Subs zeigen lassen.'
+        }
+    },
+    options: {
+        user: {
+            description: {
+                default: 'Select the tag of a sub.',
+                localize: {
+                    de: 'Wähle den Tag eines Subs aus.'
+                }
+            }
+        }
+    },
+}
 const wofCommand = {
     description: {
         default: 'Turn the WoF and choose a task for yourself or your sub.',
@@ -55,11 +91,21 @@ const wofCommand = {
             de: 'Dreht das WoF und wählt eine Aufgabe für sie selbst oder deinen Sub aus.'
         }
     },
-    userOption: {
-        description: {
-            default: 'Turn the WoF for your sub.',
-            localize: {
-                de: 'Dreht das WoF für deinen Sub.'
+    options: {
+        user: {
+            description: {
+                default: 'Turn the WoF for your sub.',
+                localize: {
+                    de: 'Dreht das WoF für deinen Sub.'
+                }
+            }
+        },
+        id: {
+            description: {
+                default: 'You can select a specific task.',
+                localize: {
+                    de: 'Du kannst eine bestimmte Task auswählen.'
+                }
             }
         }
     },
@@ -77,6 +123,16 @@ const wofCommand = {
             }
         },
         description: {
+            cheating: {
+                default: 'OH NO. THE SUB WAS EVIL. \n' +
+                        'He assigned himself a task by ID. \n' +
+                        'You have to shoot again for that, and you get an additional penalty.',
+                localize: {
+                    de: 'OH NEIN. DER SUB WAR BÖSE. \n' +
+                        'Er hat sich selbst eine Task durch die ID zugewiesen. \n' +
+                        'Dafür musst du erneut drehen, und bekommst eine zusätzliche Strafe.'
+                }
+            },
             default: 'You have been assigned a task. \n' +
                 'You now have 10 minutes to clear up any missing info',
             localize: {
@@ -120,6 +176,14 @@ const wofCommand = {
                         de: 'nichts'
                     }
                 },
+            },
+            taskId: {
+                title: {
+                    default: 'TaskID',
+                    localize: {
+                        de: 'AufgabenID'
+                    }
+                },
             }
         },
         footer: {
@@ -135,5 +199,7 @@ const wofCommand = {
 module.exports = {
     breakCommand,
     verifyCommand,
-    wofCommand
+    wofCommand,
+    addOwnerCommand,
+    showOwnerCommand
 }

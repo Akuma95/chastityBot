@@ -1,0 +1,68 @@
+{
+  "schema": {
+    "wheel": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "AUFGABE",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type - Kategorie der Task",
+            "default": ""
+          },
+          "limit": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Type - Kategorie der Task"
+            }
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "title": "Optionen - Was muss geklärt werden (1 Sache pro Feld)"
+            }
+          },
+          "task": {
+            "type": "object",
+            "properties": {
+              "default": {
+                "type": "string",
+                "title": "Default - Englischer Text",
+                "default": ""
+              },
+              "localize": {
+                "type": "object",
+                "properties": {
+                  "de": {
+                    "type": "string",
+                    "title": "de - Deutsche Übersetzung",
+                    "default": ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "onSubmit": function (errors, values) {
+  if (errors) {
+  alert('Check the form for invalid values!');
+  return;
+}
+if (wheel.limit) {
+  alert('LIMIT')
+  wheel.limit = []
+}
+if (!wheel.options) {
+alert('OPTION')
+wheel.options = []
+}
+// "values" follows the schema, yeepee!
+console.log(values);
+}
+}

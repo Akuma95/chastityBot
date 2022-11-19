@@ -2,7 +2,8 @@ const wheel = [
     {
         type: 'feminization',
         limit: [
-            'Lu_ke - Akuma\'s pet'
+            'Lu_ke - Akuma\'s pet',
+            '342065206853238787'
         ],
         task: {
             default: 'Paint your nails like a good girl - wear all week!',
@@ -17,7 +18,8 @@ const wheel = [
     {
         type: 'feminization',
         limit: [
-            'Lu_ke - Akuma\'s pet'
+            'Lu_ke - Akuma\'s pet',
+            '342065206853238787'
         ],
         task: {
             default: 'Unless your skin is already hairless, shave your whole body from nose level down or make a waxing appointment.',
@@ -63,9 +65,4 @@ const wheel = [
             'nicht remote',
         ]
     },
-]
-
-
-module.exports = {
-    wheel
-}
+];

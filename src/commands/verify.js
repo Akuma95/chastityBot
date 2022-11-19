@@ -1,13 +1,13 @@
 const BaseSlashCommand = require("../utils/BaseSlashCommand.js");
-const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, Events } = require('discord.js');
-const { verifyCommand } = require("../utils/text")
+const { SlashCommandBuilder } = require('discord.js');
+const { verifyCommand: text } = require("../utils/text")
 
 module.exports = class BreakSlashCommand extends BaseSlashCommand {
     constructor() {
         super('verify');
     }
 
-    async run(client, interaction) {
+    async run(client, interaction, storage) {
         await interaction.reply({
             content: this.random()
         });
@@ -20,8 +20,8 @@ module.exports = class BreakSlashCommand extends BaseSlashCommand {
     getSlashCommandJSON() {
         return new SlashCommandBuilder()
             .setName(this.name)
-            .setDescription(verifyCommand.description.default)
-            .setDescriptionLocalizations(verifyCommand.description.localize)
+            .setDescription(text.description.default)
+            .setDescriptionLocalizations(text.description.localize)
             .toJSON()
     }
 }
