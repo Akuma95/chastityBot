@@ -69,6 +69,7 @@ async function getAllSubs() {
 }
 
 async function getAllData() {
+    await getAllCalenderTasks();
     await getAllWofTasks();
     await getAllSubs();
 }
