@@ -254,6 +254,11 @@ module.exports = class CalenderBreakSlashCommand extends BaseSlashCommand {
                 obj.img = 'https://d.furaffinity.net/art/syrupdesolation/1613877002/1613877002.syrupdesolation_img_1439.png';
                 obj.src = 'https://www.furaffinity.net/view/40730036/';
                 break;
+            case 'Selfcare':
+                obj.color = '0x0099FF';
+                obj.img = 'https://d.furaffinity.net/art/syrupdesolation/1613877002/1613877002.syrupdesolation_img_1439.png';
+                obj.src = 'https://www.furaffinity.net/view/40730036/';
+                break;
             case 'Exercise':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ebro/1613924883/1613924883.ebro_dee45lp-2186c9e3-3c52-403c-ace7-43c6749fb4db.jpg';
@@ -278,6 +283,26 @@ module.exports = class CalenderBreakSlashCommand extends BaseSlashCommand {
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/emofoxgamesyt/1667472037/1667472037.emofoxgamesyt__22_snow.jpg';
                 obj.src = 'https://www.furaffinity.net/view/49659702/';
+                break;
+            case 'Sport':
+                obj.color = '0x0099FF';
+                obj.img = 'https://d.furaffinity.net/art/ebro/1613924883/1613924883.ebro_dee45lp-2186c9e3-3c52-403c-ace7-43c6749fb4db.jpg';
+                obj.src = 'https://www.furaffinity.net/view/40736871/';
+                break;
+            case 'Draw':
+                obj.color = '0x0099FF';
+                obj.img = 'https://d.furaffinity.net/art/zetaxen/1521424262/1521424262.zetaxen_silva-quick-draw.jpg';
+                obj.src = 'https://www.furaffinity.net/view/26728038/';
+                break;
+            case 'Isolation':
+                obj.color = '0x0099FF';
+                obj.img = 'https://d.furaffinity.net/art/stripedcrocodile/1584649835/1584649835.stripedcrocodile_joey_isolation_3-14-2020_watermark.png';
+                obj.src = 'https://www.furaffinity.net/view/35503204/';
+                break;
+            case 'Pose':
+                obj.color = '0x0099FF';
+                obj.img = 'https://d.furaffinity.net/art/fraythefox/1555527226/1555527226.fraythefox_fonovaya_lisa.jpg';
+                obj.src = 'https://www.furaffinity.net/view/31222893/';
                 break;
             default:
                 obj.color = '0x0099FF';
