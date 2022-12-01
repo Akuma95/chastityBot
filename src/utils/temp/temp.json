@@ -1,68 +1,27 @@
 {
-  "schema": {
-    "wheel": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "title": "AUFGABE",
-        "properties": {
-          "type": {
-            "type": "string",
-            "title": "Type - Kategorie der Task",
-            "default": ""
-          },
-          "limit": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "title": "Type - Kategorie der Task"
-            }
-          },
-          "options": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "title": "Optionen - Was muss geklärt werden (1 Sache pro Feld)"
-            }
-          },
-          "task": {
-            "type": "object",
-            "properties": {
-              "default": {
-                "type": "string",
-                "title": "Default - Englischer Text",
-                "default": ""
-              },
-              "localize": {
-                "type": "object",
-                "properties": {
-                  "de": {
-                    "type": "string",
-                    "title": "de - Deutsche Übersetzung",
-                    "default": ""
-                  }
-                }
-              }
-            }
-          }
-        }
+  Sammlung-1: {
+    Dokument-1:{
+      Id: 1,
+      Name: 'Titel 1',
+      text: 'Hier steht Text'
+    },
+    Dokument-2:{
+      Id: 2,
+      Name: 'Titel 2',
+      text: 'Hier steht anderer Text'
+    },
+    Unter-Sammlung-1: {
+      Dokument-1:{
+        wert: 1364383
+      },
+      Dokument-2:{
+        wert: 1363424
       }
     }
   },
-  "onSubmit": function (errors, values) {
-  if (errors) {
-  alert('Check the form for invalid values!');
-  return;
-}
-if (wheel.limit) {
-  alert('LIMIT')
-  wheel.limit = []
-}
-if (!wheel.options) {
-alert('OPTION')
-wheel.options = []
-}
-// "values" follows the schema, yeepee!
-console.log(values);
-}
+  Sammlung-2: {
+    Dokument-1:{
+      Name: 'Neue Liste Haha',
+    },
+  }
 }
