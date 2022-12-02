@@ -29,7 +29,7 @@ module.exports = class CalenderBreakSlashCommand extends BaseSlashCommand {
         const embed = this.getEmbed(user, wheel, interaction)
         await interaction.reply({
             embeds: [embed],
-            content: '<@1047791711054725140>'//1047787215452905553
+            content: '<@&1043836564553347122>'
         });
     }
 
@@ -139,7 +139,7 @@ module.exports = class CalenderBreakSlashCommand extends BaseSlashCommand {
                 obj.img = 'https://d.furaffinity.net/art/sweetietheprotogen/1603311645/1564322163.sweetietheprotogen_femboy_sweetie.png';
                 obj.src = 'https://www.furaffinity.net/view/32439401/';
                 break;
-            case 'Sissy':
+            case 'sissy':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/sweetietheprotogen/1603311645/1564322163.sweetietheprotogen_femboy_sweetie.png';
                 obj.src = 'https://www.furaffinity.net/view/32439401/';
@@ -159,147 +159,147 @@ module.exports = class CalenderBreakSlashCommand extends BaseSlashCommand {
                 obj.img = 'https://d.furaffinity.net/art/rajii/1540399554/1540399554.rajii_that_was_quick_fa.png';
                 obj.src = 'https://www.furaffinity.net/view/29140545/';
                 break;
-            case 'Petplay':
+            case 'petplay':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/lazyhowl/1647120834/1647120834.lazyhowl_lazyhowljorrpetplay.jpg';
                 obj.src = 'https://www.furaffinity.net/view/46325621/';
                 break;
-            case 'Time':
+            case 'time':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/nominu/1659892133/1659892023.nominu_koboldclocktf2022-08-07.jpg';
                 obj.src = 'https://www.furaffinity.net/view/48450372/';
                 break;
-            case 'Bondage':
+            case 'bondage':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/nitani/1550164312/1550164312.nitani_бондаж_и_лисикв.png';
                 obj.src = 'https://www.furaffinity.net/view/30471594/';
                 break;
-            case 'Nipple':
+            case 'nipple':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/cheotdo/1636097191/1636097191.cheotdo_nipple_attack_.jpg';
                 obj.src = 'https://www.furaffinity.net/view/44484422/';
                 break;
-            case 'Sauce':
+            case 'sauce':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/famir/1580063590/1580063590.famir_новыйхолст1ппп.jpg';
                 obj.src = 'https://www.furaffinity.net/view/34770547/';
                 break;
-            case 'Little':
+            case 'little':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/titusw/1611997302/1611997299.titusw_dew_it_.jpg';
                 obj.src = 'https://www.furaffinity.net/view/40372842/';
                 break;
-            case 'ABDL':
+            case 'abdl':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/titusw/1611997302/1611997299.titusw_dew_it_.jpg';
                 obj.src = 'https://www.furaffinity.net/view/40372842/';
                 break;
-            case 'Piss':
+            case 'piss':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ehnu/1601329798/1601329778.ehnu_pawstadog.png';
                 obj.src = 'https://www.furaffinity.net/view/38431912/';
                 break;
-            case 'Writing':
+            case 'writing':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/herr-wozzeck/1526466585/1526466585.herr-wozzeck_1526419060.vallhund_sketch-herrwozzeck02.png';
                 obj.src = 'https://www.furaffinity.net/view/27353121/';
                 break;
-            case 'Remote':
+            case 'remote':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/roodboy/1642933344/1642933344.roodboy_photo_2022-01-09_18-54-43_-_copy.jpg';
                 obj.src = 'https://www.furaffinity.net/view/45619607/';
                 break;
-            case 'Denial':
+            case 'denial':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/trashjeanie/1625941753/1625941753.trashjeanie_screen_shot_2021-07-10_at_2_19_36_pm.png';
                 obj.src = 'https://www.furaffinity.net/view/42721194/';
                 break;
-            case 'Hookup':
+            case 'hookup':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/maxwell2111/1573854758/1573854758.maxwell2111_284688d8-83d3-46a4-adb4-3f669cb2f520.png';
                 obj.src = 'https://www.furaffinity.net/view/33845955/';
                 break;
-            case 'PITA':
+            case 'pita':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/rotarr/1578749319/1578749319.rotarr_200110_pain.jpg';
                 obj.src = 'https://www.furaffinity.net/view/34562266/';
                 break;
-            case 'BDSM':
+            case 'bdsm':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ragnarfaerhir/1666216493/1666216493.ragnarfaerhir_kuno_and_thyngar__bdsm___low-res_.jpg';
                 obj.src = 'https://www.furaffinity.net/view/49466357/';
                 break;
-            case 'Public':
+            case 'public':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/fallowfox/1558973453/1558973453.fallowfox_park_spanking.png';
                 obj.src = 'https://www.furaffinity.net/view/31686639/';
                 break;
-            case 'Clothes':
+            case 'clothes':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/kraidhiel/1525457538/1525457538.kraidhiel_tiger_clothes_coll.jpg';
                 obj.src = 'https://www.furaffinity.net/view/27229047/';
                 break;
-            case 'Faproulette':
+            case 'faproulette':
                 obj.color = '0x0099FF';
                 obj.img = 'https://pbs.twimg.com/profile_banners/2391367422/1561685349/1500x500';
                 obj.src = 'https://www.faproulette.co';
                 break;
-            case 'Diet':
+            case 'diet':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/gravewalker/1529103623/1529103623.gravewalker_ych_orichubby_done_sm.jpg';
                 obj.src = 'https://www.furaffinity.net/view/27674781/';
                 break;
-            case 'Self-care':
+            case 'self-care':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/syrupdesolation/1613877002/1613877002.syrupdesolation_img_1439.png';
                 obj.src = 'https://www.furaffinity.net/view/40730036/';
                 break;
-            case 'Selfcare':
+            case 'selfcare':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/syrupdesolation/1613877002/1613877002.syrupdesolation_img_1439.png';
                 obj.src = 'https://www.furaffinity.net/view/40730036/';
                 break;
-            case 'Exercise':
+            case 'exercise':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ebro/1613924883/1613924883.ebro_dee45lp-2186c9e3-3c52-403c-ace7-43c6749fb4db.jpg';
                 obj.src = 'https://www.furaffinity.net/view/40736871/';
                 break;
-            case 'Oral':
+            case 'oral':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ajbun/1584597102/1584597102.ajbun_ckiymtm.jpg';
                 obj.src = 'https://www.furaffinity.net/view/35493910/';
                 break;
-            case 'Maid':
+            case 'maid':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/lockhartthedeer/1629075455/1629075445.lockhartthedeer_lockhart_2_.png';
                 obj.src = 'https://www.furaffinity.net/view/43266943/';
                 break;
-            case 'EEEEEvil':
+            case 'eeeeevil':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/nitricgt/1552955990/1552955990.nitricgt_nitrocomm2.png';
                 obj.src = 'https://www.furaffinity.net/view/30870974/';
                 break;
-            case 'Compliment':
+            case 'compliment':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/emofoxgamesyt/1667472037/1667472037.emofoxgamesyt__22_snow.jpg';
                 obj.src = 'https://www.furaffinity.net/view/49659702/';
                 break;
-            case 'Sport':
+            case 'sport':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/ebro/1613924883/1613924883.ebro_dee45lp-2186c9e3-3c52-403c-ace7-43c6749fb4db.jpg';
                 obj.src = 'https://www.furaffinity.net/view/40736871/';
                 break;
-            case 'Draw':
+            case 'draw':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/zetaxen/1521424262/1521424262.zetaxen_silva-quick-draw.jpg';
                 obj.src = 'https://www.furaffinity.net/view/26728038/';
                 break;
-            case 'Isolation':
+            case 'isolation':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/stripedcrocodile/1584649835/1584649835.stripedcrocodile_joey_isolation_3-14-2020_watermark.png';
                 obj.src = 'https://www.furaffinity.net/view/35503204/';
                 break;
-            case 'Pose':
+            case 'pose':
                 obj.color = '0x0099FF';
                 obj.img = 'https://d.furaffinity.net/art/fraythefox/1555527226/1555527226.fraythefox_fonovaya_lisa.jpg';
                 obj.src = 'https://www.furaffinity.net/view/31222893/';

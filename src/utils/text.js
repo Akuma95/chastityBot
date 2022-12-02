@@ -133,11 +133,13 @@ const wofCommand = {
                         'Dafür musst du erneut drehen, und bekommst eine zusätzliche Strafe.'
                 }
             },
-            default: 'You have been assigned a task. \n' +
-                'You now have 10 minutes to clear up any missing info',
+            default: 'You have a task for the advent calendar :) \n' +
+                'You have until the end of the day to complete this task. \n' +
+                'Upload the result in the form of a picture or video here in the channel.',
             localize: {
-                de: 'Dir wurde eine Aufgabe zugewiesen. \n' +
-                    'Du hast jetzt 10 Minuten um alle fehlenden Infos zu klären.'
+                de: 'Du hast eine Aufgabe für den Adventskalender :) \n' +
+                'Du hast bis zum Ende des Tages Zeit, diese Aufgabe auszuführen. \n' +
+                'Lade das Ergebnis in Form eines Bildes oder Videos hier im Channel hoch.'
             }
         },
         fields: {
@@ -156,10 +158,10 @@ const wofCommand = {
                 },
                 description: {
                     default: 'As soon as everything is cleared you have \n' +
-                        '1 hour',
+                        'Until the end of the day time.',
                     localize: {
                         de: 'Sobald alles geklärt ist hast du \n' +
-                            '1 Stunde'
+                            'Bis zum Ende des Tages Zeit.'
                     }
                 },
             },
